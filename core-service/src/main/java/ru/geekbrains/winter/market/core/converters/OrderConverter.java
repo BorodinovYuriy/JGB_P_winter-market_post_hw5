@@ -13,7 +13,6 @@ public class OrderConverter {
     private final OrderItemConverter orderItemConverter;
 
     public OrderDto entityToDto(Order order) {
-        // TODO: 14.02.2023 встроить в OrderDto
         return OrderDto.builder()
                 .id(order.getId())
                 .address(order.getAddress())
